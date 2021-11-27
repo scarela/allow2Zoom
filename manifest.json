@@ -1,0 +1,21 @@
+{
+
+	"manifest_version": 2,
+	"name": "Allow 2 Zoom",
+	"version": "1.0",
+  
+	"description": "Remove constraints in websites that don't allow to zoom in.",
+
+	"icons": {
+		"48": "icons/zoom-in.png"
+	},
+  
+	"content_scripts": [
+	  {
+		"matches": ["<all_urls>"],
+		"js": ["main.js"]
+	  }
+	]
+  
+  }
+  
